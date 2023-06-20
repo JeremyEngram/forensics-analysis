@@ -1,0 +1,8 @@
+#!/bin/bash
+
+LOGS='system_forensics.log, network_foreniscs.log, public_records.log, file_forensics.log, disk_forensics.log, socmint_foreniscs.log'
+
+log_analysis() {
+  echo 'log analysis' a 
+  cat $LOGS | grep $a | tee -a $a
+}
