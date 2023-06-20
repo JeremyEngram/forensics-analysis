@@ -4,5 +4,5 @@ LOGS='system_forensics.log, network_foreniscs.log, public_records.log, file_fore
 
 log_analysis() {
   echo 'log analysis' a 
-  cat $LOGS | grep $a | tee -a $a
+  cat $LOGS | grep $a | tee -a $a | filtered_log.log | column $a | pandoc -i $a.log -o $a.pdf
 }
